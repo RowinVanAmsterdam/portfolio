@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ======================================== UNIVERSAL ======================================== */
+
+/*
+========================================
+Custom styles
+========================================
+Bron background: https://www.digitalplatforms.co.za/website-design-background/
+*/
+
+body {
+  height: 100vh;
+  background-image: url(../images/desksetup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: Helvetica, "Times New Roman", Arial;
+}
+
+/*
+========================================
+Header and navigation
+========================================
+*/
+
+header {
+  background-color: #ffffff;
+  font-family: "Times New Roman";
+  height: auto;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.75);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #939393;
+  text-decoration: underline;
+}
+
+.active {
+  color: #939393;
+}
+
+/* ======================================== HOME ======================================== */
+
+/*
+========================================
+Welcome message
+========================================
+*/
+
+.message {
+  color: #ffffff;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message h1:first-of-type {
+  font-size: 1em;
+  letter-spacing: 1em;
+}
+
+.message h1:last-of-type {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+
+/* ======================================== Portfolio ======================================== */
+
+/*
+========================================
+Cards
+========================================
+Bron cards: https://codepen.io/doonnnx/pen/QbBKxv
+*/
+
+.cardfield {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.portfoliocards {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portfoliocards a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.portfoliocards p {
+  font-size: 13px;
+}
+
+.portfoliocards a:hover .card-outmore {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.portfoliocards a:hover .thecard {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, .6);
+}
+
+.thecard {
+  width: 300px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, .4);
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 400ms ease;
+}
+
+.card-img {
+  height: 225px;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-caption {
+  position: relative;
+  background: #ffffff;
+  padding: 15px 25px 5px 25px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-outmore {
+  padding: 10px 25px 10px 25px;
+  border-radius: 0px 0px 4px 4px;
+  border-top: 1px solid #e0e0e0;
+  background: #efefef;
+  color: #222;
+  display: inline-table;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 400ms ease;
+}
+
+.card-outmore h5 {
+  float: left;
+}
+
+.card-outmore i {
+  float: right;
+}
+
+span.date {
+  font-size: 10px;
+}
+
+.portfoliocards h1 {
+  font-size: 22px;
+}
+
+.portfoliocards h5 {
+  margin: 0;
+}
+
+#outmore-icon {
+  border: 1px solid;
+  padding: 1px 6px;
+  border-radius: 50em;
+}
+
+/* ======================================== Projectpagina's ======================================== */
+
+/*
+========================================
+Project pagina's
+========================================
+*/
+
+
+.projectinfo {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.projectinfo img {
+  width: 40vw;
+  height: 60vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.projecttext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projecttext h1 {
+  font-size: 20px;
+}
+
+.projectinfo p:first-of-type {
+  border-top: 1px solid rgb(217, 217, 217);
+  padding-top: 10px;
+}
+
+.projectinfo p {
+  max-width: 350px;
+  margin-top: 10px;
+}
+
+.projectimages img {
+  width: 64.5vw;
+  display: block;
+  margin: 20px auto;
+}
+
+/*
+========================================
+Buttons
+========================================
+*/
+
+.button {
+  border: 2px solid #ffffff;
+  width: 200px;
+  text-align: center;
+  padding: 15px 5px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 0px 3px #f7f7f7;
+  transition: .3s;
+}
+
+/*
+========================================
+Videos
+========================================
+*/
+
+video {
+  width: 64.5vw;
+  display: block;
+  margin: 20px auto;
+}
